@@ -1,2 +1,2 @@
 #1/bin/bash
-__ls__ -> /bin/ls
+/bin/ls  -> __ls__

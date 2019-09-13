@@ -1,1 +1,0 @@
-The following project helps you to learn permissions and other Man Pages. 

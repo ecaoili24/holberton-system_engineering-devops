@@ -1,3 +1,2 @@
 #!/bin/bash
-ls -amp
-
+ls -a -m -p .

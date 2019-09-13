@@ -1,0 +1,1 @@
+The project covers permissions and the man page. 

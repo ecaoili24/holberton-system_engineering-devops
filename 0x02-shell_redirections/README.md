@@ -1,0 +1,1 @@
+The following repo covers the Shell with I/O Redirections and filters. Know and understand the commands.

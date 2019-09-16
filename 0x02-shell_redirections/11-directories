@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -print | ls -la
+find . -type f -print | ls -lRa

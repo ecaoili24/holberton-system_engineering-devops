@@ -1,0 +1,1 @@
+The following covers init files, variables, and expansions. Read and understand expansions, shell Arithmetic, variables, shell initialization fies, and the alias command.

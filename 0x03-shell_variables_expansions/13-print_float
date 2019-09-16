@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $NUM | print f "%2f\n" 
+print f "%2f\n" | echo $NUM

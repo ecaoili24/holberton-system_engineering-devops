@@ -21,3 +21,4 @@ The ls command by itself will list files and directories. Note: It can be paired
 .c is a string paired with the character to find all files that end with .c. You can alter the string to your desired search.
 If no files or directories end in .c, the terminal will print: “ls: cannot access *.c: No such file or directory”
 Now, go forth and take a tour in your shell!
+

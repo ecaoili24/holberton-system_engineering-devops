@@ -1,2 +1,2 @@
 #!/bin/bash
-alias rot13="tr a-zA-Z n-za-mN-ZA-M"
+echo '"Everyone is a proponent of strong encryption."' | tr 'A-Za-z' 'N-ZA-Mn-za-m'

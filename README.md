@@ -13,4 +13,8 @@ The following projects cover an overview of the foundational skills needed to su
 
 ### Author
 
-[Erika Caoili](erika.caoili@gmail.com)
+Erika Caoili
+
+Email: [erika.caoili@gmail.com](erika.caoili@gmail.com)
+
+Follow me on twitter: [https://twitter.com/CaoiliErika](https://twitter.com/CaoiliErika)

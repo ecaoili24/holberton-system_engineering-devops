@@ -1,4 +1,4 @@
-#1/usr/bin/env bash
+#!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
 
 i=0

@@ -1,1 +1,92 @@
-/Users/ike/Desktop/Screen\ Shot\ 2020-02-27\ at\ 5.33.13\ PM.png
+20.Challenge name: remove_extensions_from_files/
+Description: Rename all files removing the extension from
+them in the current directory recursively.
+Solution: find `pwd` -type f -exec bash -c 'mv "$1" "${1%.*}"' - '{}' \;
+
+
+21.Challenge name: replace_spaces_in_filenames/
+Description: The files in this challenge contain spaces.
+List all of the files (filenames only) in the
+current directory but replace all spaces with
+a '.' character.
+Solution: find . -type f -printf “%f\n” | ls -1 | tr ‘ ‘ ‘ . ‘
+
+22.Challenge name: dirs_containing_files_with_extension/
+Description: In this challenge there are some directories containing files
+with different extensionas. Print all directories,
+one per line without duplicates that contain
+one or more files with a ".tf" extension.
+Solution: find . -name "*.tf" -type f -exec dirname {} \; | sort | uniq
+
+23.Challenge name: files_starting_with_a_number/
+Description: There are a mix of files in this directory
+that start with letters and numbers. Print
+the filenames (just the filenames) of all
+files that start with a number recursively
+in the current directory.
+Solution: find . -type f -name '[[:digit:]]*' -printf '%f\n'
+
+24.Challenge name: print_nth_line/
+Description: Print the 25th line of the file faces.txt
+Solution: sed -n '25p' faces.txt
+
+25.Challenge name: reverse_readme/
+Description: Print the lines of the README file in this directory in
+reverse line order so that the last line is printed first
+and the first line is printed last.
+~~~~~~~~~~~~~~~~~~~~
+In the future
+ Environmental destruction will be the norm
+No longer can it be said that
+My peers and I care about this earth
+It will be evident that
+My generation is apathetic and lethargic
+It is foolish to presume that
+There is hope
+~~~~~~~~~~~~~~~~~~~~
+-Jonathan Reed "The Lost Generation"
+Solution: tac README
+
+26.Challenge name: remove_duplicate_lines/
+Description: Print the file faces.txt, but only print the first instance of each
+duplicate line, even if the duplicates don't appear next to each other.
+Note that order matters so don't sort the lines before removing duplicates.
+Solution: awk ‘!c[$0]++’ faces.txt
+
+27.Challenge name: disp_table/
+Description: The file "table.csv" contains the following comma-separated lines:
+# id,name,count
+# 4,susan,11
+# 33,alice,22
+# 1772,joe,33
+#
+# Print the rows as a table, like the following:
+# id    name   count
+# 4     susan  11
+# 33    alice  22
+# 1772  joe    33
+Solution: cat table.csv | column -t -s","
+
+28.Challenge name: find_primes
+Description: The file random-numbers.txt contains a list
+of 100 random integers. Print the number of
+unique prime numbers contained in the file.
+Solution: factor < random-numbers.txt | egrep ‘^([2-9] | [0-9]{2,}): \1$’ | sort | uniq | wc -l
+
+29.Challenge name: corrupted_text/
+Description: The following excerpt from War and Peace is saved to
+the file 'war_and_peace.txt':
+
+She is betraying us! Russia alone must save Europe.
+Our gracious sovereign recognizes his high vocation
+and will be true to it. That is the one thing I have
+faith in! Our good and wonderful sovereign has to
+perform the noblest role on earth, and he is so virtuous
+and noble that God will not forsake him. He will fulfill
+his vocation and crush the hydra of revolution, which
+has become more terrible than ever in the person of this
+murderer and villain!
+
+The file however has been corrupted, there are random '!'
+marks inserted throughout.  Print the original text.
+Solution: < war_and_peace.txt tr -s ‘!’ | sed ‘s/!\([a-z]\)/\1/g’ | sed ‘s/!\( [a-z]\)/\1/g’ | sed ‘s/!\.!/./g’ | sed ‘s/ !/ /g’

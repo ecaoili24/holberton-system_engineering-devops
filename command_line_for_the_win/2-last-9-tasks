@@ -9,7 +9,7 @@ Description: The files in this challenge contain spaces.
 List all of the files (filenames only) in the
 current directory but replace all spaces with
 a '.' character.
-Solution: find . -type f -printf “%f\n” | ls -1 | tr ‘ ‘ ‘ . ‘
+Solution: find . -type f -printf “%f\n” | ls -1 | tr ‘ ‘ ‘.‘
 
 22.Challenge name: dirs_containing_files_with_extension/
 Description: In this challenge there are some directories containing files

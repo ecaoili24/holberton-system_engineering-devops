@@ -2,7 +2,6 @@
 
 file {
   '/tmp/holberton':
-  path    =>  '/tmp/holberton',
   mode    =>  '0774',
   owner   =>  'www-data',
   group   =>  'www-data',

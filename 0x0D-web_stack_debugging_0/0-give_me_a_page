@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Bash script to fix (52) Empty reply and boot up server.
+service apache2 start

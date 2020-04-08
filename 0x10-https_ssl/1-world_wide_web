@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Bash script that will display information about subdomains
+# shellcheck disable=SC2086
+
+get_parameters()
+{
+    record=$(dig $i.$1 | awk '/ANSWER SECTION:/ {getline; print $4}')
+    ip=$(dig $i.$1 | awk '/ANSWER SECTION:/ {getline; print $5}')
+}
+
+if [ -z $2 ]; then
+    for i in "www" "lb-01" "web-01" "web-02"; do
+    get_parameters $1
+    echo "The subdomain $i is a $record record and points to $ip"
+    done
+else
+    i=$2
+    get_parameters $1
+    echo "The subdomain $i is a $record record and points to $ip"
+fi

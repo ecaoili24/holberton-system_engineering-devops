@@ -1,4 +1,4 @@
-## Mysql
+## MySQL
 
 ## Learning Objectives
 

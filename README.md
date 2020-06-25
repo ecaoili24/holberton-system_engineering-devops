@@ -1,4 +1,6 @@
-![Holberton Logo](https://i.ibb.co/nMtRXQR/Holberton.png)
+<p align="center">
+<img src="https://i.ibb.co/nMtRXQR/Holberton.png">
+</p>
 
 # System Administration/DevOps Curriculum
 The following projects cover an overview of the foundational skills needed to succeed in becoming one of the many types of network engineers--such as a DevOps Engineer or Site Reliability Engineers (SRE). The two topics that will be covered most extensively in the Foundations curriculum are: operating systems and networking.  Engineers in this field, require knowledge not only of how to program software, but how to expertly operate an OS (especially GNU/Linux). The implementation of networking and how it works is key. They need an understanding of hardware and its limitations, and how to design and automate a system to meet the specific needs of the software that their employer is distributing via the Internet. 

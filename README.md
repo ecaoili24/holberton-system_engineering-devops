@@ -28,6 +28,13 @@ The following projects cover an overview of the foundational skills needed to su
 | [0x11-what_happens_when_your_type](https://github.com/ecaoili24/holberton-system_engineering-devops/tree/master/0x11-what_happens_when_your_type_holbertonschool_com_in_your_browser_and_press_enter) | A blog and diagram of how what happens when you type a url in your browser and press enter |
 | [0x12-web_stack_debugging_2](https://github.com/ecaoili24/holberton-system_engineering-devops/tree/master/0x12-web_stack_debugging_2) | Running and Debugging software as another user |
 | [0x13-firewall](https://github.com/ecaoili24/holberton-system_engineering-devops/tree/master/0x13-firewall) | Setting up UFW to block and allow incoming traffic |
+| [0x14-mysql](https://github.com/ecaoili24/holberton-system_engineering-devops/tree/master/0x14-mysql) | Intro to Databases and setting up a MySQL db |
+| [0x15-api](https://github.com/ecaoili24/holberton-system_engineering-devops/tree/master/0x16-api_advanced) | API Query and exporting data to JSON format or CSV |
+| [0x17-web_stack_debugging_3](https://github.com/ecaoili24/holberton-system_engineering-devops/tree/master/0x17-web_stack_debugging_3) | Using strace to debug |
+| [0x18-webstack_monitoring](https://github.com/ecaoili24/holberton-system_engineering-devops/tree/master/0x18-webstack_monitoring) | Using Datadog to monitor systems |
+| [0x19-postmortem](https://github.com/ecaoili24/holberton-system_engineering-devops/tree/master/0x19-postmortem) | How to write a Postmortem for server outages |
+| [0x1A-application_server](https://github.com/ecaoili24/holberton-system_engineering-devops/tree/master/0x1A-application_server) | Serving Flask apps with Gunicorn and NGINX |
+| [0x1B-web_stack_debugging_4](https://github.com/ecaoili24/holberton-system_engineering-devops/tree/master/0x1B-web_stack_debugging_4) | Benchmarking with ApacheBench |
 
 ### Author
 
